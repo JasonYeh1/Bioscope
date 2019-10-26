@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Bioscope</string>
+    <string name="imageBtnVidDescription">Records Videos</string>
+    <string name="imageBtnPicDescription">Takes Picture</string>
+    <string name="title_activity_camera">Camera</string>
+
+    <string name="infoMessage">A portable microscope that offers high enough magnification to view cells through the screen of your smartphone.</string>
+    <string name="title_activity_image_info">ImageInfoActivity</string>
+
+</resources>

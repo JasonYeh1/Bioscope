@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:screenOrientation="portrait"
+    android:background="@color/background_color"
+    android:keepScreenOn="true">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/header_color"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:background="@android:color/transparent"
+            android:text="Back"
+            android:textColor="#FFFFFF"
+            android:textAlignment="textStart"
+            android:paddingLeft="8dp"
+            android:paddingStart="8dp"
+            android:onClick="Back"/>
+
+        <TextView
+            android:id="@+id/textView_ImageName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="IMAGE NAME"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/button_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:background="@android:color/transparent"
+            android:text="Info"
+            android:textColor="#FFFFFF"
+            android:textAlignment="textEnd"
+            android:paddingRight="8dp"
+            android:paddingEnd="8dp"
+            android:onClick="Info"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/myImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="Image Holder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0"
+        android:screenOrientation="portrait"/>
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="+"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:background="@drawable/button"
+        android:id="@+id/buttonAddMore"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="1.0"
+        android:textAlignment="center"
+        android:onClick="Options"/>
+
+
+</android.support.constraint.ConstraintLayout>
